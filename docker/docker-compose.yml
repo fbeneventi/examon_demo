@@ -25,7 +25,7 @@ services:
   grafana:
     build:
       context: ./grafana
-    image: examonhpc/grafana:5.4.3 
+    image: examonhpc/grafana:7.3.10 
     logging:
       driver: json-file
       options:
@@ -38,6 +38,7 @@ services:
       - examon_net
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=Password
+      - GF_INSTALL_PLUGINS=ae3e-plotly-panel 0.4.0
     depends_on:
       - kairosdb
 
