@@ -1,4 +1,9 @@
-# ExaMon Docker Setup
+# Examon HPC Monitoring
+
+A highly scalable framework for the performance and energy monitoring of HPC servers
+
+## Setup
+
 This setup will install all server-side components of the ExaMon framework:
 
  - MQTT broker and Db connector
@@ -15,7 +20,7 @@ To install all the services needed by ExaMon we will use Docker and Docker Compo
 
 [Install Docker and Docker Compose](https://docs.docker.com/engine/installation/).
 
-## Setup
+## Install instructions
 
 ### Clone the Git repository
 
@@ -50,11 +55,11 @@ Fill out the form with the following settings:
  - Type: `KairosDB`  
  - Name: `kairosdb` 
  - Url: http://kairosdb:8083 
- - Access: `Proxy`
+ - Access: `Server`
 
 ## Usage Examples
 
-### Collecting data using the "pmu_pub" plugin
+### Collecting data using the dummy "examon_pub" plugin
 Once all Docker services are running (can be started either by `docker-compose up -d` or `docker-compose start`), the MQTT broker is available at `TEST_SERVER` port `1883` where `TEST_SERVER` is the address of the server where the services run.
 
 To test the installation we can use the `examon_pub` plugin available in the `publishers/examon_pub` folder of  this project.
