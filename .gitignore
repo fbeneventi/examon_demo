@@ -1,4 +1,7 @@
-publishers/pmu_pub/host_whitelist
-publishers/pmu_pub/pmu_pub.conf
-parser/pmu_pub_sp/logfile.log
+*.log
+*.log.*
 *.pyc
+.ipynb_* 
+examon-cache/
+examon-cache/*
+

@@ -1,3 +1,8 @@
-FROM grafana/grafana:5.4.3
+FROM grafana/grafana:7.3.10-ubuntu
 
-COPY ./kairosdb-datasource /var/lib/grafana/plugins/kairosdb-datasource
+COPY --chown=grafana:root ./kairosdb-datasource-3-alerts /var/lib/grafana/plugins/kairosdb-datasource-3-alerts
+COPY --chown=grafana:root grafana.ini /etc/grafana/
+
+VOLUME /var/lib/grafana
+
+
