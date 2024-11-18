@@ -64,6 +64,8 @@ Once all Docker services are running (can be started either by `docker-compose u
 
 To test the installation we can use the `examon_pub` plugin available in the `publishers/examon_pub` folder of  this project.
 
+It is highly recommended to follow the tutorial described in the Jupyter notebook `README-notebook.ipynb` to understand how an Examon plugin works.
+
 After having installed and configured it on one or more test nodes we can start the data collection running for example:
 
 ```bash
