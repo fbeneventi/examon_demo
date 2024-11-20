@@ -35,7 +35,7 @@ git clone https://github.com/ExamonHPC/examon.git
 Once you have the above setup, you need to create the Docker services:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 This will build the Docker images and fetch some prebuilt images and then start the services. You can refer to the `docker-compose.yml` file to see the full configuration. 
@@ -62,14 +62,14 @@ Fill out the form with the following settings:
 ### Collecting data using the dummy "examon_pub" plugin
 Once all Docker services are running (can be started either by `docker-compose up -d` or `docker-compose start`), the MQTT broker is available at `TEST_SERVER` port `1883` where `TEST_SERVER` is the address of the server where the services run.
 
-To test the installation we can use the `examon_pub` plugin available in the `publishers/examon_pub` folder of  this project.
+To test the installation we can use the `examon_pub.py` plugin available in the `publishers/examon_pub` folder of  this project.
 
 It is highly recommended to follow the tutorial described in the Jupyter notebook `README-notebook.ipynb` to understand how an Examon plugin works.
 
 After having installed and configured it on one or more test nodes we can start the data collection running for example:
 
 ```bash
-[root@testnode00]$ ./examon_pub -b TEST_SERVER -p 1883 -t org/myorg -s 1 run
+[root@testnode00]$ python ./examon_pub.py -b TEST_SERVER -p 1883 -s 1 run
 ```
 If everything went well, the data are available both through the Grafana interface and using the `examon-client`. 
 
