@@ -1,0 +1,71 @@
+site_name: ExaMon
+site_url: 'https://fbeneventi.github.io/' 
+repo_url: https://github.com/ExamonHPC/examon
+repo_name: ExamonHPC/examon
+site_description: Gain deeper insights into your data with advanced monitoring, analytics and visualization tools.
+# copyright: Copyright &copy; 2023 Francesco Beneventi
+
+theme:
+  name: material
+  custom_dir: docs/overrides/
+  features:
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - announce.dismiss
+  logo: assets/images/favicon.png
+  plugins:
+    - search:
+        lang: en
+        prebuild_index: true
+
+plugins:
+  - blog
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - mkdocs-jupyter:
+      include_source: True
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - toc
+  - extra
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+nav:
+    - Home: "index.md"
+    - Introduction: "Introduction.md"
+    - Getting started: "getting_started.md"
+    - Administrators:
+      - Getting started: Administrators/Getting_started.md
+    - Users:
+      - Getting started: Users/Getting_started.md
+    - Clusters:
+      - Marconi 100: "Marconi100/Metrics_reference.md"
+      - MonteCimone:
+        - Introduction: "MonteCimone/MonteCimone.md"
+        - Notebooks:
+          - Getting started: "MonteCimone/Examon_Monte_Cimone.ipynb" 
+    - About: "About.md"
+    - Credits: "credits.md"
+    - Contact Us: "contactus.md"
+    - Blog:
+      - blog/index.md
+
+extra:
+  version:
+    provider: mike
+    alias: true
