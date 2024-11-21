@@ -23,9 +23,7 @@ To install all the services needed by ExaMon we will use Docker and Docker Compo
 First you will need to clone the Git repository:
 
 ```bash
-git clone https://github.com/EEESlab/examon
-git checkout develop
-cd examon/docker/
+git clone https://github.com/ExamonHPC/examon.git
 ```
 
 ### Create Docker Services
@@ -53,19 +51,21 @@ Fill out the form with the following settings:
  - Type: `KairosDB`  
  - Name: `kairosdb` 
  - Url: http://kairosdb:8083 
- - Access: `Proxy`
+ - Access: `Server`
 
 ## Usage Examples
 
-### Collecting data using the "pmu_pub" plugin
-Once all Docker services are running (can be started either by `docker compose up -d` or `docker compose start`) the MQTT broker is available at `TEST_SERVER` port `1883` where `TEST_SERVER` is the address of the server where the services run.
+### Collecting data using the dummy "examon_pub" plugin
+Once all Docker services are running (can be started either by `docker-compose up -d` or `docker-compose start`), the MQTT broker is available at `TEST_SERVER` port `1883` where `TEST_SERVER` is the address of the server where the services run.
 
-To test the installation, we can use the `pmu_pub` plugin available in the `publishers/pmu_pub` folder of  this project.
+To test the installation we can use the `examon_pub.py` plugin available in the `publishers/examon_pub` folder of  this project.
+
+It is highly recommended to follow the tutorial described in the Jupyter notebook `README-notebook.ipynb` to understand how an Examon plugin works.
 
 After having installed and configured it on one or more test nodes we can start the data collection running for example:
 
 ```bash
-[root@testnode00]$ ./pmu_pub -b TEST_SERVER -p 1883 -t org/myorg -s 1 run
+[root@testnode00]$ python ./examon_pub.py -b TEST_SERVER -p 1883 -s 1 run
 ```
 If everything went well, the data are available both through the Grafana interface and using the [examon-client](../Users/Demo_ExamonQL.ipynb). 
 
