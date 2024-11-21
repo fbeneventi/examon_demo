@@ -8,11 +8,15 @@ The key feature of the framework is its data model, designed to be schema-less a
 
 Another key aspect of the framework's design is making industry data easily available for research purposes. Indeed, researchers only need to manage a single data source to have a complete picture of complex industrial systems, and the benefits can be many. The ease of access to a huge variety and quantity of real-world data will enable them to create innovative solutions with results that may have real-world impact.
 
-![](images/image13.png)
+<figure markdown align="center">
+  ![](images/image13.png){ width="80%" }
+</figure>
 
 Furthermore, access to a wide variety of heterogeneous data with very low latency enables the realization of accurate digital twins. In this regard, the framework can provide both historical data for building accurate models, and fresh data for quickly making inferences on the same models. Moreover, the availability of up-to-date data in near real-time allows the construction of visual models that enable the rapid acquisition of knowledge about the state of any complex system. In fact, by exploiting the language of visual communication, it is possible to extend collaboration by bringing together a wide range of experts focused on problem-solving or optimization of the system itself.
 
-![](images/image3.png)
+<figure markdown align="center">
+  ![](images/image3.png){ width="80%" }
+</figure>
 
 The architecture of the framework is based on established protocols and technologies rather than specific tools and implementations. The communication layer is based on the publish-subscribe model that finds various implementations, such as in the MQTT protocol. The need to interact with different data sources, ranging from complex room cooling systems to internal CPU sensors, requires a simple, scalable, low-latency communication protocol that is resilient to network conditions and natively designed to enable machine-to-machine (M2M) communication in complex environments. Moreover, data persistence is handled by a NoSQL-type database, an industry-proven technology, designed to be horizontally scalable and built to efficiently handle large amounts of data. On top of these two pillars, the other components are primarily dedicated to handling the two main categories of data that characterize the ExaMon framework. The first is the time series data type, which represents the majority of the data sources managed by ExaMon and is suitable for managing all the sensors and logs available today in a data center. The second is the generic tabular data type, suitable for managing metadata and any other data that does not fall into the first category. ExaMon provides the tools and interfaces to coordinate these two categories and interface them with the user in the most seamless way.
 
