@@ -56,7 +56,7 @@ Fill out the form with the following settings:
 ## Usage Examples
 
 ### Collecting data using the dummy "examon_pub" plugin
-Once all Docker services are running (can be started either by `docker-compose up -d` or `docker-compose start`), the MQTT broker is available at `TEST_SERVER` port `1883` where `TEST_SERVER` is the address of the server where the services run.
+Once all Docker services are running (can be started either by `docker compose up -d` or `docker compose start`), the MQTT broker is available at `TEST_SERVER` port `1883` where `TEST_SERVER` is the address of the server where the services run.
 
 To test the installation we can use the `examon_pub.py` plugin available in the `publishers/examon_pub` folder of  this project.
 
