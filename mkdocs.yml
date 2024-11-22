@@ -53,6 +53,8 @@ nav:
       - Getting started: Administrators/Getting_started.md
     - Users:
       - Getting started: Users/Getting_started.md
+    - Plugins:
+      - Example plugin: 'Plugins/examon_pub.ipynb'
     - Clusters:
       - Marconi 100: "Marconi100/Metrics_reference.md"
       - MonteCimone:
