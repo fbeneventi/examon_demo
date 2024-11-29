@@ -71,3 +71,4 @@ extra:
   version:
     provider: mike
     alias: true
+    default: latest
