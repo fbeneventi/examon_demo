@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
 ADD ./lib/examon-common $EXAMON_HOME/lib/examon-common
 ADD ./docker/examon/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 ADD ./scripts/examon.conf $EXAMON_HOME/scripts/examon.conf
+ADD ./web $EXAMON_HOME/web
 
 # install
 RUN pip --trusted-host pypi.python.org install --upgrade pip==20.1.1
