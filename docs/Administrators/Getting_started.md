@@ -70,5 +70,9 @@ After having installed and configured it on one or more test nodes we can start 
 If everything went well, the data are available both through the Grafana interface and using the [examon-client](../Users/Demo_ExamonQL.ipynb). 
 
 
+## Where to go next
+
+- Write your first plugin: [Example plugin](../Plugins/examon_pub.ipynb)
+- Write your first query: [Example query](../Users/Demo_ExamonQL.ipynb)
 
 
