@@ -33,6 +33,7 @@ ADD kairosdb-env.sh /opt/kairosdb/bin/kairosdb-env.sh
 EXPOSE 4242 8083 2003
 
 ADD config-kairos.sh /usr/bin/config-kairos.sh
+RUN chmod +x /usr/bin/config-kairos.sh
 
 # Run kairosdb in foreground on boot
 CMD ["/usr/bin/config-kairos.sh"]
