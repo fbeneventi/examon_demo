@@ -1,5 +1,7 @@
 # Examon HPC Monitoring
 
+[![Build Status](https://github.com/ExamonHPC/examon/actions/workflows/installation-test.yml/badge.svg?branch=develop)](https://github.com/ExamonHPC/examon/actions/workflows/installation-test.yml)
+
 A highly scalable framework for the performance and energy monitoring of HPC servers
 
 ## Setup
