@@ -4,6 +4,9 @@
 
 A highly scalable framework for the performance and energy monitoring of HPC servers
 
+ 📖 [Documentation](https://examonhpc.github.io/examon/)
+
+
 ## Setup
 
 This setup will install all server-side components of the ExaMon framework:
