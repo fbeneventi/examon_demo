@@ -193,12 +193,12 @@ During the installation, two Docker volumes are created, which are required for 
  ```bash
 $ docker volume ls
 DRIVER    VOLUME NAME
-local     <project_name>_cassandra_volume
-local     <project_name>_grafana_volume
+local     examon_cassandra_volume
+local     examon_grafana_volume
  ```
 
-*   The `slurm-dash_cassandra_volume` is used to store the collected metrics
-*   The `slurm-dash_grafana_volume` is used to store Grafana:
+*   The `examon_cassandra_volume` is used to store the collected metrics
+*   The `examon_grafana_volume` is used to store Grafana:
     *   users account data
     *   dashboards
 
