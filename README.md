@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="https://github.com/fbeneventi/panels/raw/main/logo3_trasp.png" alt="ExaMon" width="40%">
+</p>
+
+
 # Examon HPC Monitoring
 
 [![Build Status](https://github.com/ExamonHPC/examon/actions/workflows/installation-test.yml/badge.svg?branch=develop)](https://github.com/ExamonHPC/examon/actions/workflows/installation-test.yml)
