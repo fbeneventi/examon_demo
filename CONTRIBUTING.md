@@ -48,14 +48,14 @@ If you have a suggestion for the project, we'd love to hear about it. Please inc
 ### Coding Standards
 
 * Use consistent code formatting
-* Write clear commit messages following [Conventional Commits](https://www.conventionalcommits.org/)
+* Write clear commit messages following [Conventional Commits](https://www.conventionalcommits.org/) or at least the basic specification as in the [Commit Messages](#commit-messages) section.
 * Comment your code where necessary
 * Write tests for new features
 * Keep the code simple and maintainable
 
 ### Commit Messages
 
-We follow a basic specification:
+Basic specification example:
 
 ```
 type(scope): description
