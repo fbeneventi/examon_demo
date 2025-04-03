@@ -27,7 +27,7 @@ This setup will install all server-side components of the ExaMon framework:
 - `random_pub`
 
 Please note: the random_pub plugin is used to test the system and it will publish random metrics.
-It can be disabled as described in the [Enable/disable the plugins](#enable-disable-the-plugins) section.
+It can be disabled as described in the [Enable/disable plugins](#enabledisable-the-plugins) section.
 
 ## Prerequisites
 Since Cassandra is the component that requires the majority of resources, you can find more details about the suggested hardware configuration of the system that will host the services here:
