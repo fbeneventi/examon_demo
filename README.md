@@ -3,7 +3,7 @@
 </p>
 
 
-# Examon HPC Monitoring
+# ExaMon HPC Monitoring
 
 [![Build Status](https://github.com/ExamonHPC/examon/actions/workflows/installation-test.yml/badge.svg?branch=develop)](https://github.com/ExamonHPC/examon/actions/workflows/installation-test.yml)
 
